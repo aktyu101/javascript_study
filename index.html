@@ -3,7 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>230716 : sutdy</title>
+    <title>230716_1 : sutdy</title>
+    <style>
+      h2 {
+        display: inline-block;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h2 id="hello">안녕</h2>
+    <h2 id="name">이름</h2>
+
+    <script>
+      const a = "아연";
+      document.querySelector("#hello").innerHTML = "안녕하세요";
+      document.querySelector("#hello").style.color = "blue";
+      document.querySelector("#name").textContent = a + "님";
+      document.querySelector("#hello").style.fontSize = "50px";
+    </script>
+  </body>
 </html>

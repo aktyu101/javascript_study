@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>230716_2 : sutdy</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- <div class="alert-box">
+      alert 박스<button class="clickModalClose" onclick="clickModalClose()">
+        닫기
+      </button>
+    </div>
+    <button onclick="clickModalOpen()">버튼</button>
+
+    <script>
+      function clickModalOpen() {
+        document.querySelector(".alert-box").style.display = "block";
+      }
+      const clickModalClose = () => {
+        document.querySelector(".alert-box").style.display = "none";
+      };
+    </script> -->
+    <div class="alert-box">
+      <span class="alertText">alert 박스</span>
+      <button onclick="modalOpen('none')">닫기</button>
+    </div>
+    <button onclick="modalOpen('block', '안녕하세요')">버튼1</button>
+    <button onclick="modalOpen('block', '반갑습니다')">버튼2</button>
+
+    <script>
+      function modalOpen(displayStyle, alertText) {
+        document.querySelector(".alert-box").style.display = displayStyle;
+        document.querySelector(".alertText").textContent = alertText;
+      }
+
+      function plus(x) {
+        return 2 + x;
+      }
+      console.log("plus", plus(4));
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
